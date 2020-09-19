@@ -1,0 +1,13 @@
+@mixin square-asset ($px-size) {
+  height: px-to-rem($px-size);
+  width: px-to-rem($px-size);
+}
+
+
+/* Screen Resolution
+* ================================ */
+@mixin touch {
+  @media screen and (max-width: $desktop - 1px) {
+    @content;
+  }
+}

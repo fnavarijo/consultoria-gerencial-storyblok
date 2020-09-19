@@ -1,0 +1,25 @@
+/* Typography
+* ============================== */
+h1 { font-size: $xx-large; }
+h2 { font-size: $x-large; }
+h3 { font-size: $large; }
+h4 { font-size: $medium; }
+h5 { font-size: $small; }
+
+@each $size, $value in $font-sizes {
+  .is-#{$size} {
+    font-size: $value;
+  }
+}
+
+.bold { font-weight: 900; }
+.semi-bold { font-weight: 700; }
+.regular { font-weight: 400; }
+
+/* Position
+* ============================== */
+.center {
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
