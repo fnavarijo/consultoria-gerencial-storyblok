@@ -1,6 +1,57 @@
 @mixin square-asset ($px-size) {
   height: px-to-rem($px-size);
   width: px-to-rem($px-size);
+  min-height: px-to-rem($px-size);
+}
+
+/* Titles
+* ================================ */
+@mixin title-with-line {
+  @extend %section-title;
+  position: relative;
+  padding-bottom: px-to-rem(20);
+
+  &::after {
+    content: '';
+    width: px-to-rem(30);
+    height: 2px;
+    background-color: $blue-500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @content;
+  }
+}
+
+/* Decoration
+* ================================ */
+@mixin hexagon-shape {
+  $shape-height: 54px;
+  
+  position: relative;
+  height: $shape-height;
+  width: 96px;
+  background-color: $blue-500;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    width: 67.88px;
+    height: 67.88px;
+    transform: scaleY(0.5774) rotate(-45deg);
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &::before {
+    top: -34px;
+  }
+
+  &::after {
+    top: 20px;
+  }
 }
 
 

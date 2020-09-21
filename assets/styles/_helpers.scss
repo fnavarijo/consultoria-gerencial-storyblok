@@ -23,3 +23,23 @@ h5 { font-size: $small; }
   place-items: center;
   place-content: center;
 }
+
+/* Button
+* ============================== */
+.button {
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: $blue-500;
+  border: 1px solid transparent;
+  border-color: $blue-500;
+  color: $white;
+  font-size: px-to-rem(12);
+  display: inline-block;
+  padding: px-to-rem(14) px-to-rem(24);
+  transition: filter .2s linear;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.15);
+  }
+}

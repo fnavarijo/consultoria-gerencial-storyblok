@@ -2,8 +2,10 @@
   <section class="home-about">
     <img class="home-about__img" :src="blok.image.filename" alt="">
     <div class="home-about__info">
-      <span class="home-about__subtitle semi-bold">{{blok.about_us_subtitle}}</span>
-      <h3 class="home-about__title regular">{{blok.about_us_title}}</h3>
+      <header>
+        <span class="home-about__subtitle">{{blok.about_us_subtitle}}</span>
+        <h2 class="home-about__title">{{blok.about_us_title}}</h2>
+      </header>
       <p class="home-about__description">{{blok.about_us_description}}</p>
       <ul class="home-about__items">
         <li
@@ -40,27 +42,12 @@ export default {
   }
 
   &__subtitle {
-    text-transform: uppercase;
-    color: $blue-500;
-    font-size: $small;
-    letter-spacing: .2rem;
+    @extend %section-subtitle;
   }
 
   &__title {
-    padding-bottom: px-to-rem(20);
+    @include title-with-line;
     margin-bottom: px-to-rem(20);
-    position: relative;
-    color: $black;
-
-    &::after {
-      content: '';
-      width: px-to-rem(30);
-      height: 2px;
-      background-color: $blue-500;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
   }
 
   &__description {
