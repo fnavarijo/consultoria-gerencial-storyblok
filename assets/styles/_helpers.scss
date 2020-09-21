@@ -16,6 +16,14 @@ h5 { font-size: $small; }
 .semi-bold { font-weight: 700; }
 .regular { font-weight: 400; }
 
+/* Colors
+* ============================== */
+@each $color, $value in $colors-map {
+  .is-font-#{$color} {
+    color: $value;
+  }
+}
+
 /* Position
 * ============================== */
 .center {
@@ -42,4 +50,11 @@ h5 { font-size: $small; }
   &:hover {
     filter: brightness(1.15);
   }
+}
+
+/* Elements
+* ============================== */
+.hero {
+  height: 100vh;
+  min-height: 300px;
 }

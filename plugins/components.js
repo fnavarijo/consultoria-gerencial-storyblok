@@ -11,6 +11,7 @@ import HomeBusinessInfo from '~/components/home/HomeBusinessInfo.vue';
 import HomeBusinessInfoItem from '~/components/home/HomeBusinessInfoItem.vue';
 import HomeOurServices from '~/components/home/HomeOurServices.vue';
 import HomeOurServicesFeature from '~/components/home/HomeOurServicesFeature.vue';
+import HomeHero from '~/components/home/HomeHero.vue';
 
 Vue.component('blok-page', Page)
 Vue.component('blok-teaser', Teaser)
@@ -24,3 +25,4 @@ Vue.component('blok-home-business-info', HomeBusinessInfo);
 Vue.component('blok-home-business-info-item', HomeBusinessInfoItem);
 Vue.component('blok-home-our-services', HomeOurServices);
 Vue.component('blok-home-our-services-feature', HomeOurServicesFeature);
+Vue.component('blok-home-hero', HomeHero);

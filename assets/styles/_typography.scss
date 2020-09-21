@@ -6,6 +6,7 @@ $medium: $base-font-size;
 $large: $base-font-size * $scale-ratio-font;
 $x-large: $large * $scale-ratio-font;
 $xx-large: $x-large * $scale-ratio-font;
+$xxx-large: $xx-large * $scale-ratio-font;
 
 $font-sizes: (
   'small': $small,
@@ -13,4 +14,5 @@ $font-sizes: (
   'large': $large,
   'x-large': $x-large,
   'xx-large': $xx-large,
+  'xxx-large': $xxx-large,
 )
