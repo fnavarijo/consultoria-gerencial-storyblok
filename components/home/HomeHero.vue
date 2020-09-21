@@ -16,9 +16,8 @@ export default {
 
 <style lang="scss" scoped>
 .home-hero {
+  @extend %background-image;
   padding: px-to-rem(50);
-  background-repeat: no-repeat;
-  background-size: cover;
 
   &__title {
     text-align: center;

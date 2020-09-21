@@ -43,10 +43,7 @@ export default {
   }
 
   &__title {
-    @include title-with-line {
-      right: 0;
-      margin: auto;
-    }
+    @include title-with-line('center');
   }
 }
 

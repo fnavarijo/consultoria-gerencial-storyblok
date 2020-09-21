@@ -70,8 +70,10 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
-
+    extend(config, { isDev }) {
+      // if (isDev) {
+      //   config.cacheBusting = false;
+      // }
     }
   }
 }

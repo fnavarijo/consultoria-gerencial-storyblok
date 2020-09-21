@@ -6,10 +6,11 @@
 
 /* Titles
 * ================================ */
-@mixin title-with-line {
+@mixin title-with-line($align: 'left') {
   @extend %section-title;
   position: relative;
   padding-bottom: px-to-rem(20);
+  @content;
 
   &::after {
     content: '';
@@ -19,7 +20,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    @content;
+
+    @if ($align == center) {
+      right: 0;
+      margin: auto;
+    }
   }
 }
 
