@@ -14,6 +14,7 @@ import HomeOurServicesFeature from '~/components/home/HomeOurServicesFeature.vue
 import HomeHero from '~/components/home/HomeHero.vue';
 import HomeTestimonials from '~/components/home/HomeTestimonials.vue';
 import HomeTestimonialsContent from '~/components/home/HomeTestimonialsContent.vue';
+import TheFooter from '~/components/TheFooter.vue'
 
 Vue.component('blok-page', Page)
 Vue.component('blok-teaser', Teaser)
@@ -30,3 +31,4 @@ Vue.component('blok-home-our-services-feature', HomeOurServicesFeature);
 Vue.component('blok-home-hero', HomeHero);
 Vue.component('blok-home-testimonials', HomeTestimonials);
 Vue.component('blok-home-testimonials-content', HomeTestimonialsContent);
+Vue.component('blok-the-footer', TheFooter);

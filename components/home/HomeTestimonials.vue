@@ -68,6 +68,7 @@ export default {
   background-image:
     linear-gradient(90deg, $color-overlay, $color-overlay),
     var(--background-image);
+  background-position: center;
 
 
   &__header {
