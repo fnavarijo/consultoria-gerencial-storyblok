@@ -36,7 +36,8 @@ export default {
   background-color: $white;
   margin: 0 px-to-rem(10) px-to-rem(10) px-to-rem(10);
   padding: 0 px-to-rem(20) px-to-rem(20) px-to-rem(20);
-  place-content: flex-start;
+  // place-content: flex-start;
+  justify-content: space-between;
   place-items: center;
 
   &__title {
