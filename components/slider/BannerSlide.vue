@@ -1,9 +1,9 @@
 <template>
   <div
     class="center banner-slide"
-    :style="{ background: `url(${blok.background_image.filename})` }"
+    :style="{ backgroundImage: `url(${blok.background_image.filename})` }"
   >
-    <h1 class="bold">{{ blok.title }}</h1>
+    <h1 class="banner-slide__title bold">{{ blok.title }}</h1>
     <p class="is-medium">{{ blok.subtitle }}</p>
   </div>
 </template>
@@ -24,5 +24,17 @@ export default {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
+}
+
+@include touch {
+  .banner-slide {
+    background-position: center center;
+
+    &__title {
+      text-align: center;
+      line-height: 1;
+      margin-bottom: px-to-rem(20);
+    }
+  }
 }
 </style>

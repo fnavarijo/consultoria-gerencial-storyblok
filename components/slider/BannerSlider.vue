@@ -71,4 +71,20 @@ export default {
     right: px-to-rem(25);
   }
 }
+
+@include touch {
+  .banner-slider {
+    &__navigation-btn {
+      @include square-asset(30);
+    }
+
+    &__prev {
+      left: px-to-rem(10);
+    }
+
+    &__next {
+      right: px-to-rem(10);
+    }
+  }
+}
 </style>
