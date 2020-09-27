@@ -1,7 +1,8 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
+  // ssr: false,
   buildModules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/svg',
@@ -75,5 +76,8 @@ module.exports = {
       //   config.cacheBusting = false;
       // }
     }
+  },
+  generate: {
+    fallback: true,
   }
 }

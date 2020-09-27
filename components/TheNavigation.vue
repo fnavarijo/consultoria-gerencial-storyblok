@@ -42,15 +42,20 @@ export default {
       margin-right: px-to-rem(25);
       position: relative;
 
+      &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        background-color: $blue-500;
+        transition: width .2s linear;
+      }
+
       &:hover {
         &::after {
-          content: '';
-          position: absolute;
-          height: 2px;
-          bottom: 0;
-          left: 0;
           width: 100%;
-          background-color: $blue-500;
         }
       }
 
