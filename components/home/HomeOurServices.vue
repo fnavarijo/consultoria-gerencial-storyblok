@@ -52,7 +52,7 @@ export default {
     padding: px-to-rem(80) px-to-rem(20);
 
     &__features {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 50%);
     }
   }
 }
