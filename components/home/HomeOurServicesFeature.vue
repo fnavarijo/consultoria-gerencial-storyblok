@@ -36,7 +36,6 @@ export default {
   background-color: $white;
   margin: 0 px-to-rem(10) px-to-rem(10) px-to-rem(10);
   padding: 0 px-to-rem(20) px-to-rem(20) px-to-rem(20);
-  // place-content: flex-start;
   justify-content: space-between;
   place-items: center;
 
@@ -70,6 +69,9 @@ export default {
 
 @include touch {
   .services-feature {
+    margin: 0 px-to-rem(3) px-to-rem(10) px-to-rem(3);
+    padding: 0 px-to-rem(15) px-to-rem(15) px-to-rem(15);
+
     &__title {
       text-align: center;
     }

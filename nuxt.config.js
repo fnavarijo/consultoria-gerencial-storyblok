@@ -1,8 +1,8 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'spa',
-  // ssr: false,
+  ssr: false,
+  target: 'static',
   buildModules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/svg',
