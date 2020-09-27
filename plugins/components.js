@@ -3,7 +3,7 @@ import Page from '~/components/Page.vue'
 import Teaser from '~/components/Teaser.vue'
 import Grid from '~/components/Grid.vue'
 import Feature from '~/components/Feature.vue'
-import AppNavigation from '~/components/AppNavigation.vue';
+import TheNavigation from '~/components/TheNavigation.vue';
 import BannerSlider from '~/components/slider/BannerSlider.vue';
 import BannerSlide from '~/components/slider/BannerSlide.vue';
 import HomeAbout from '~/components/home/HomeAbout.vue';
@@ -20,7 +20,7 @@ Vue.component('blok-page', Page)
 Vue.component('blok-teaser', Teaser)
 Vue.component('blok-grid', Grid)
 Vue.component('blok-feature', Feature)
-Vue.component('blok-app-navigation', AppNavigation);
+Vue.component('blok-the-navigation', TheNavigation);
 Vue.component('blok-banner-slide', BannerSlide);
 Vue.component('blok-banner-slider', BannerSlider);
 Vue.component('blok-home-about', HomeAbout);

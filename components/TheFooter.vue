@@ -1,9 +1,16 @@
 <template>
   <footer class="footer is-font-white">
     <div class="footer__sections">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.
+      <div class="footer__business">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.
+      </div>
       <div class="footer__contact">
         <h3 class="footer__subtitle regular">Contacto</h3>
+        <ul>
+          <li>
+            +502 22556644
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
@@ -22,7 +29,8 @@ export default {
 
     &__sections {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: px-to-rem(50);
     }
 
     &__subtitle {
@@ -31,6 +39,10 @@ export default {
       line-height: 1.2;
       font-size: $medium;
       border-bottom: 3px solid $white;
+    }
+
+    &__business {
+      font-size: px-to-rem(14);
     }
   }
 </style>
