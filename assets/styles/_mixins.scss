@@ -59,6 +59,20 @@
   }
 }
 
+/* Custom list bullet
+* ================================ */
+@mixin list-bullet-image ($icon-code) {
+  position: relative;
+  padding-left: px-to-rem(20);
+
+  &::before {
+    font-family: icomoon;
+    content: $icon-code;
+    position: absolute;
+    left: 0;
+  }
+}
+
 
 /* Screen Resolution
 * ================================ */

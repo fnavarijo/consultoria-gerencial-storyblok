@@ -59,4 +59,11 @@ h5 { font-size: $small; }
   min-height: 300px;
 }
 
+/* links
+* ============================== */
+.link {
+  color: $blue-500;
+  text-decoration: none;
+}
+
 // TODO: Add container helper
